@@ -19,12 +19,12 @@ const SEOHead = ({
   structuredData 
 }: SEOHeadProps) => {
   const location = useLocation();
-  const baseUrl = 'https://3x0techsolutionsltd.com.ng';
+  const baseUrl = 'https://3x0collab.github.io/3x0tech';
   
   // Default SEO values
-  const defaultTitle = '3x0Tech Solutions Ltd – Leading Enterprise Software Development Company in Nigeria';
-  const defaultDescription = 'Transform your business with enterprise-grade software solutions from Nigeria\'s premier technology company. We deliver AI-powered platforms, custom software development, digital transformation, and technology consulting across Africa.';
-  const defaultKeywords = 'enterprise software development Nigeria, digital transformation Africa, custom software development Lagos, AI technology solutions Nigeria, business automation software, technology consulting Africa, software integration services, enterprise applications Nigeria, Nigerian tech company, Africa software development';
+  const defaultTitle = '3x0Tech Solutions Ltd — Custom Software, AI Chatbots & Web Development in Nigeria';
+  const defaultDescription = 'We build websites, mobile apps, AI chatbots, HR software, and accounting tools for businesses in Nigeria and Africa. 50+ projects delivered. Get a free quote today.';
+  const defaultKeywords = 'software development Nigeria, web developer Nigeria, AI chatbot Nigeria, HR software Lagos, accounting software Nigeria, mobile app developer Nigeria, custom software Nigeria, website design Nigeria, tech company Nigeria, software company Lagos, build a website Nigeria, hire developer Nigeria, PYE AI chatbot, Orbityx HR, Quicksum accounting, Step-Code coding platform, business software Africa';
   const defaultImage = `${baseUrl}/lovable-uploads/29d73fec-f2da-4dcd-8ba9-2a01937574bd.png`;
 
   const finalTitle = title || defaultTitle;

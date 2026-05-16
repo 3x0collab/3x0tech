@@ -149,9 +149,9 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Portfolio — 50+ Projects Delivered | 3x0Tech Solutions"
-        description="Explore our portfolio of enterprise software, AI platforms, blockchain solutions, and e-commerce applications."
-        keywords="software portfolio, custom software development, enterprise solutions, AI applications"
+        title="Our Work — 50+ Software Projects Delivered | 3x0Tech Solutions Nigeria"
+        description="See 50+ websites, apps, and software projects we've built for businesses in Nigeria. Banking systems, e-commerce stores, AI platforms, HR tools, and more."
+        keywords="software portfolio Nigeria, websites built in Nigeria, mobile apps Nigeria, banking software Nigeria, ecommerce website examples, AI platform projects, HR software demo, web development projects Lagos, custom software examples Africa, RadarPro banking, Iconcept4Pro, Web3 wallet, Nigerian developer portfolio"
       />
 
       {/* ──── Hero ──── */}

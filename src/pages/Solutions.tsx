@@ -126,9 +126,9 @@ const Solutions = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Software Solutions — PYE AI, Orbityx HR, Quicksum | 3x0Tech"
-        description="Discover enterprise software solutions by 3x0Tech: PYE AI support, Orbityx HR, Quicksum accounting, Step-Code learning, and CampusCafe printing platform."
-        keywords="enterprise software Nigeria, AI customer support, HR management software, accounting software Africa, learning platform"
+        title="Our Software Products — AI Chatbot, HR Software, Accounting App | 3x0Tech"
+        description="Explore our products: PYE AI chatbot for customer support, Orbityx HR management, Quicksum accounting, Step-Code coding platform, and CampusCafe printing. Try them today."
+        keywords="PYE AI chatbot Nigeria, best AI customer support chatbot, Orbityx HR software, HR management system Nigeria, Quicksum accounting software, bookkeeping app Nigeria, Step-Code coding platform, learn to code Nigeria, CampusCafe campus printing, document printing app Nigeria, best business software Nigeria, affordable HR software Africa, AI assistant for website, automated customer support Nigeria"
         structuredData={structuredData}
       />
 

@@ -66,9 +66,9 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About 3x0Tech Solutions — Our Mission, Team & Values"
-        description="Learn about Nigeria's premier technology company transforming businesses across Africa with innovative software, AI platforms, and digital transformation."
-        keywords="about 3x0tech, Nigerian tech company, software development Africa, digital transformation"
+        title="About 3x0Tech Solutions Ltd — Software Developers in Nigeria | Our Team"
+        description="Meet the team behind 3x0Tech Solutions. We're Nigerian developers building websites, AI chatbots, mobile apps, and business software. Based in Ogun State, serving businesses across Africa."
+        keywords="about 3x0tech solutions, Nigerian software developers, tech team Nigeria, software company Ogun State, who builds PYE AI chatbot, Orbityx HR developers, Nigerian tech startup, software engineers Lagos, developers in Sango Ota, African tech company, young developers Nigeria"
         structuredData={structuredData}
       />
 

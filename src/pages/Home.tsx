@@ -96,37 +96,108 @@ const Home = () => {
     { value: '5+', label: 'Products Built' },
   ];
 
+  const siteUrl = 'https://3x0collab.github.io/3x0tech';
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "3x0Tech Solutions Ltd",
-    "alternateName": "3x0Tech Solutions",
-    "url": "https://3x0techsolutionsltd.com.ng",
-    "logo": "https://3x0techsolutionsltd.com.ng/lovable-uploads/29d73fec-f2da-4dcd-8ba9-2a01937574bd.png",
-    "description": "Nigerian tech startup building intelligent, affordable, and scalable software solutions including AI assistants, HR software, accounting tools, and learning platforms.",
-    "foundingDate": "2024",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Number 22, Charity Avenue",
-      "addressLocality": "Sango Ota",
-      "addressRegion": "Ogun State",
-      "addressCountry": "NG"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+234-816-443-5695",
-      "email": "info@3x0techsolutionsltd.com.ng",
-      "contactType": "Customer Service",
-      "availableLanguage": "English"
-    },
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        "name": "3x0Tech Solutions Ltd",
+        "alternateName": ["3x0Tech Solutions", "3x0Tech", "3x0 Tech"],
+        "url": siteUrl,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteUrl}/lovable-uploads/29d73fec-f2da-4dcd-8ba9-2a01937574bd.png`,
+          "width": 512,
+          "height": 512
+        },
+        "description": "We build websites, mobile apps, AI chatbots, HR software, and accounting tools for businesses in Nigeria and Africa. 50+ projects delivered.",
+        "foundingDate": "2024",
+        "areaServed": ["Nigeria", "Africa", "Global"],
+        "knowsAbout": ["Software Development", "Web Development", "AI Chatbots", "Mobile Apps", "HR Software", "Accounting Software", "E-commerce"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Number 22, Charity Avenue",
+          "addressLocality": "Sango Ota",
+          "addressRegion": "Ogun State",
+          "postalCode": "110001",
+          "addressCountry": "NG"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+234-816-443-5695",
+            "email": "info@3x0techsolutionsltd.com.ng",
+            "contactType": "Customer Service",
+            "availableLanguage": "English",
+            "areaServed": "NG"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/p/3x0Tech-Solutions-100089180495872/",
+          "https://x.com/PrinceAdedapo6",
+          "https://ng.linkedin.com/in/ismail-adedapo-7b84a7190"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Software Development Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development", "description": "Custom websites and web applications for Nigerian businesses" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile App Development", "description": "iOS and Android apps for businesses" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Chatbot Development", "description": "Smart AI chatbots for customer support" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Software Development", "description": "Bespoke software platforms for business operations" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity Services", "description": "Security audits and penetration testing" } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        "name": "3x0Tech Solutions Ltd",
+        "url": siteUrl,
+        "publisher": { "@id": `${siteUrl}/#organization` },
+        "description": "Custom software, AI chatbots, websites, and mobile apps for businesses in Nigeria",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${siteUrl}/#webpage`,
+        "url": siteUrl,
+        "name": "3x0Tech Solutions Ltd — Custom Software, AI Chatbots & Web Development Nigeria",
+        "isPartOf": { "@id": `${siteUrl}/#website` },
+        "about": { "@id": `${siteUrl}/#organization` },
+        "description": "We build websites, mobile apps, AI chatbots, HR software, and accounting tools for businesses in Nigeria and Africa.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "3x0Tech Solutions Ltd",
+        "image": `${siteUrl}/lovable-uploads/29d73fec-f2da-4dcd-8ba9-2a01937574bd.png`,
+        "url": siteUrl,
+        "telephone": "+234-816-443-5695",
+        "email": "info@3x0techsolutionsltd.com.ng",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Number 22, Charity Avenue",
+          "addressLocality": "Sango Ota",
+          "addressRegion": "Ogun State",
+          "postalCode": "110001",
+          "addressCountry": "NG"
+        },
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 09:00-18:00"
+      }
+    ]
   };
 
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="3x0Tech Solutions — Enterprise Software & AI Solutions | Nigeria"
-        description="We build intelligent, scalable software that powers digital transformation across Africa. AI platforms, enterprise applications, and custom development."
-        keywords="enterprise software Nigeria, AI solutions Africa, custom software development, digital transformation, Nigerian tech company"
+        title="3x0Tech Solutions Ltd — Custom Software, AI Chatbots & Web Development Nigeria"
+        description="Need a website, mobile app, or AI chatbot for your business? 3x0Tech Solutions builds custom software for Nigerian businesses. 50+ projects delivered. Free consultation."
+        keywords="software developer Nigeria, web developer Lagos, AI chatbot for business Nigeria, hire software developer Nigeria, build website Nigeria, mobile app development Nigeria, custom software company Lagos, best tech company Nigeria, affordable web design Nigeria, business automation software Nigeria, PYE AI assistant, Orbityx HR software, Quicksum accounting app, Step-Code learn to code, website designer near me Nigeria, freelance developer Nigeria, startup software Nigeria, ecommerce website Nigeria, SaaS development Africa"
         structuredData={structuredData}
       />
 

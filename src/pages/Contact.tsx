@@ -99,34 +99,49 @@ const Contact = () => {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "3x0Tech Solutions Ltd",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+234-816-443-5695",
-        "email": "info@3x0techsolutionsltd.com.ng",
-        "contactType": "Customer Service",
-        "availableLanguage": "English",
-        "hoursAvailable": "Mo-Fr 09:00-18:00",
-      }],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Number 22, Charity Avenue",
-        "addressLocality": "Sango Ota",
-        "addressRegion": "Ogun State",
-        "addressCountry": "NG",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "3x0Tech Solutions Ltd",
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+234-816-443-5695",
+            "email": "info@3x0techsolutionsltd.com.ng",
+            "contactType": "Customer Service",
+            "availableLanguage": "English",
+            "hoursAvailable": "Mo-Fr 09:00-18:00",
+          }],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Number 22, Charity Avenue",
+            "addressLocality": "Sango Ota",
+            "addressRegion": "Ogun State",
+            "addressCountry": "NG",
+          },
+        },
       },
-    },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      }
+    ]
   };
 
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Contact 3x0Tech Solutions — Get a Free Consultation"
-        description="Ready to transform your business? Contact 3x0Tech Solutions for enterprise software, AI solutions, and digital transformation services in Nigeria."
-        keywords="contact 3x0tech, software development quote, AI consultation Nigeria, enterprise software Nigeria"
+        title="Contact 3x0Tech Solutions — Get a Free Quote | Software Development Nigeria"
+        description="Need a website or software built? Contact 3x0Tech Solutions for a free consultation. We reply within 24 hours. Call +234-816-443-5695 or email us."
+        keywords="contact software developer Nigeria, hire web developer Nigeria, get a quote website Nigeria, free software consultation Nigeria, software development quote Lagos, contact 3x0tech, phone number 3x0tech solutions, email software company Nigeria, book a developer Nigeria"
         structuredData={structuredData}
       />
 

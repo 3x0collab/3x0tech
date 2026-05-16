@@ -84,9 +84,9 @@ const Blog = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Blog — Tech Insights & Industry Trends | 3x0Tech Solutions"
-        description="Insights on enterprise software, AI innovation, and digital transformation from Nigeria's leading tech experts."
-        keywords="technology blog Nigeria, software development insights, AI trends Africa"
+        title="Blog — Software Development Tips & Tech News Nigeria | 3x0Tech"
+        description="Read about software development, AI, HR automation, and tech tips for Nigerian businesses. Written by real developers at 3x0Tech Solutions."
+        keywords="tech blog Nigeria, software development tips, AI chatbot guide, HR automation tips, accounting software guide, how to build a website Nigeria, coding tutorials Nigeria, Nigerian tech news, developer blog Africa, digital transformation tips Nigeria, best software for small business Nigeria"
         structuredData={structuredData}
       />
 
