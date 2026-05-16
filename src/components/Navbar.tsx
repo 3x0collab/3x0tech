@@ -35,7 +35,7 @@ const Navbar = () => {
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-2.5 group">
             <img
-              src="/lovable-uploads/29d73fec-f2da-4dcd-8ba9-2a01937574bd.png"
+              src={`${import.meta.env.BASE_URL}lovable-uploads/29d73fec-f2da-4dcd-8ba9-2a01937574bd.png`}
               alt="3x0Tech Solutions"
               className="h-9 w-9 transition-transform duration-300 group-hover:scale-105"
             />
